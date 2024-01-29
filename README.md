@@ -37,3 +37,16 @@ Options:
 
 Supported services: adam6500 asterisk cisco cisco-enable cvs firebird ftp[s] http[s]-{head|get|post} http[s]-{get|post}-form http-proxy http-proxy-urlenum icq imap[s] irc ldap2[s] ldap3[-{cram|digest}md5][s] memcached mongodb mssql mysql nntp oracle-listener oracle-sid pcanywhere pcnfs pop3[s] postgres radmin2 rdp redis rexec rlogin rpcap rsh rtsp s7-300 sip smb smtp[s] smtp-enum snmp socks5 ssh sshkey svn teamspeak telnet[s] vmauthd vnc xmpp etc.
 
+
+<br>
+
+## Example of RDP brute force with Hydra <br>
+**Command:**
+hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt rdp://ip -s 3333 (in my case the RDP port is 3333 and i used metasploit user and password list) 
+**Output**
+<img src="hydrardp.png" width=70% height="auto"><br><br>
+
+Hydra supports a lot of protocols, the most famous are:SMB, HTTP, RDP, SSH, FTP, MySQL, etc.
+
+#Author
+<b>Xiao Li Savio Feng</b>
