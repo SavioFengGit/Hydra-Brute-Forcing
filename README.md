@@ -4,7 +4,7 @@ Let's introduce the Hydra tool
 # Introduction of the tool
 ## Hydra
 Hydra is a tool that can perform brute-force attacks on various network services, such as telnet, FTP, HTTP, SSH, RDP and more. It can use a dictionary of passwords or generate them on the fly. Hydra is very fast and flexible, and it is often used by penetration testers and ethical hackers to crack passwords and gain unauthorized access to systems<br>
-<img src="hydra.png" width=80% height="auto"><br>
+<img src="hydra1.png" width=80% height="auto"><br>
 <br>
 Options:
   - -R        **restore a previous aborted/crashed session**
