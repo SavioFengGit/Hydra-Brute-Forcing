@@ -3,8 +3,9 @@ Let's introduce the Hydra tool
 
 # Introduction of the tool
 ## Hydra
-Hydra is a tool that can perform brute-force attacks on various network services, such as telnet, FTP, HTTP, SSH, RDP and more. It can use a dictionary of passwords or generate them on the fly. Hydra is very fast and flexible, and it is often used by penetration testers and ethical hackers to crack passwords and gain unauthorized access to systems
-
+Hydra is a tool that can perform brute-force attacks on various network services, such as telnet, FTP, HTTP, SSH, RDP and more. It can use a dictionary of passwords or generate them on the fly. Hydra is very fast and flexible, and it is often used by penetration testers and ethical hackers to crack passwords and gain unauthorized access to systems<br>
+<img src="hydra.png" width=120% height="auto"><br>
+<br>
 Options:
   - -R        **restore a previous aborted/crashed session**
   - -I        **ignore an existing restore file (don't wait 10 seconds)**
@@ -43,7 +44,7 @@ Supported services: adam6500 asterisk cisco cisco-enable cvs firebird ftp[s] htt
 ## Example of RDP brute force with Hydra <br>
 **Command:**
 hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt rdp://ip -s 3333 (in my case the RDP port is 3333 and i used metasploit user and password list) 
-**Output**
+**Output** <br>
 <img src="hydrardp.png" width=70% height="auto"><br><br>
 
 Hydra supports a lot of protocols, the most famous are:SMB, HTTP, RDP, SSH, FTP, MySQL, etc.
